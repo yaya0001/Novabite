@@ -1,0 +1,9 @@
+know_path="Novabite/knowledgebase"
+top_k=3
+temperature=0
+prompt="\n".join(["You are a restaurant assistant.", "Answer ONLY using the provided context.","If the answer is not found, reply:","\'I couldn't find this information in the restaurant knowledge base.\'","Context:{context}","Question:{input}"])
+chunk_size=500
+chunk_overlap=100
+model_name="sentence-transformers/all-MiniLM-L6-v2"
+groq_model="llama-3.1-8b-instant"
+vdb_path="Novabite/RAG/vectordb"
